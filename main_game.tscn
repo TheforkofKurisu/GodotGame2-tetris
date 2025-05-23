@@ -1,0 +1,298 @@
+[gd_scene load_steps=50 format=3 uid="uid://dp1a64755x67u"]
+
+[ext_resource type="Script" path="res://MainGame.gd" id="1_2n2bp"]
+[ext_resource type="Texture2D" uid="uid://36fuhcbsxafc" path="res://resource/spines/底板1.png" id="1_cg26s"]
+[ext_resource type="Texture2D" uid="uid://cjdbhk1kxnj5k" path="res://resource/spines/绿方块.png" id="2_mfsda"]
+[ext_resource type="FontFile" uid="uid://c366ejyt3atdn" path="res://resource/fonts/Fagrak-2.otf" id="3_c4sw5"]
+[ext_resource type="Texture2D" uid="uid://bqqbwaykwka6r" path="res://resource/spines/绿方块-高透明度.png" id="4_2khls"]
+[ext_resource type="Texture2D" uid="uid://bqis22yfka1r8" path="res://resource/spines/粉方块.png" id="4_igts7"]
+[ext_resource type="Texture2D" uid="uid://x41j4qv067n0" path="res://resource/spines/蓝方块.png" id="5_7gcdl"]
+[ext_resource type="FontFile" uid="uid://o8dtwofqsyqk" path="res://resource/fonts/Aqum-2-Small-caps-3.otf" id="5_ijal5"]
+[ext_resource type="Script" path="res://GUI.gd" id="5_mmrk7"]
+[ext_resource type="Texture2D" uid="uid://c412dv4nmwh7e" path="res://resource/spines/黄方块.png" id="6_e8duw"]
+[ext_resource type="Texture2D" uid="uid://wrsyupk2rsom" path="res://resource/spines/红方块.png" id="7_mkjsn"]
+[ext_resource type="Texture2D" uid="uid://hj0qajwpp77c" path="res://resource/spines/粉方块-高透明度.png" id="9_lafnu"]
+[ext_resource type="Texture2D" uid="uid://bu3mt3dyijaxk" path="res://resource/spines/蓝方块-高透明度.png" id="10_44r4b"]
+[ext_resource type="Texture2D" uid="uid://dyixf58uwmbwq" path="res://resource/spines/黄方块-高透明度.png" id="11_tif6b"]
+[ext_resource type="Texture2D" uid="uid://bf8d4g7v484h3" path="res://resource/spines/红方块-高透明度.png" id="12_4bce3"]
+[ext_resource type="FontFile" uid="uid://bvqvwrhoijci4" path="res://Xolonium-Regular.ttf" id="14_meck4"]
+[ext_resource type="AudioStream" uid="uid://dpxmil73v8jy7" path="res://resource/xuan/啊哈.mp3" id="16_c7of8"]
+[ext_resource type="AudioStream" uid="uid://g48u4gg0l0ce" path="res://resource/xuan/芜湖4.mp3" id="17_wnp2a"]
+[ext_resource type="AudioStream" uid="uid://jvyjh4m8udvt" path="res://resource/xuan/芜湖3 激情.mp3" id="18_j752m"]
+[ext_resource type="AudioStream" uid="uid://cvkmi522g18n6" path="res://resource/xuan/芜湖5.mp3" id="19_2nav4"]
+[ext_resource type="AudioStream" uid="uid://djpcu787xwbwq" path="res://resource/xuan/给我冲.mp3" id="19_5l1ur"]
+[ext_resource type="AudioStream" uid="uid://db3cejmddwe5j" path="res://resource/xuan/惹啊 激情.mp3" id="20_6xj3a"]
+[ext_resource type="AudioStream" uid="uid://cgb1y2spk1yqs" path="res://resource/xuan/汪 长音.mp3" id="20_ep5gw"]
+[ext_resource type="AudioStream" uid="uid://c4pggqyfjx6ud" path="res://resource/xuan/挨抓了.mp3" id="20_g0hs6"]
+[ext_resource type="AudioStream" uid="uid://cyqx2m0xrcicx" path="res://resource/xuan/九米狂龙.mp3" id="20_lt8ku"]
+[ext_resource type="AudioStream" uid="uid://c674duyv0jp0d" path="res://resource/xuan/我是龙.mp3" id="21_5d2kh"]
+[ext_resource type="AudioStream" uid="uid://drgp7kpbujwcs" path="res://resource/xuan/汪敖 汪敖.mp3" id="21_5hwri"]
+[ext_resource type="AudioStream" uid="uid://edo3e7r3pxwc" path="res://resource/xuan/芜湖1.mp3" id="21_amptq"]
+[ext_resource type="AudioStream" uid="uid://dttcldyvp7id7" path="res://resource/xuan/龙哥就是龙.mp3" id="21_opo7k"]
+[ext_resource type="AudioStream" uid="uid://ddlq8fbmikqti" path="res://resource/xuan/我是狗？.mp3" id="22_oqc56"]
+[ext_resource type="Texture2D" uid="uid://chfbv87bqoxsc" path="res://resource/xuan/50559ffc95ab0f8411d56d5bf0515e06.png" id="31_wkytv"]
+[ext_resource type="Texture2D" uid="uid://cxiqyawo7apr2" path="res://resource/xuan/4d5197cfa97a3c98da1802f7e556d2c1.png" id="32_qdih3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jyprr"]
+texture = ExtResource("2_mfsda")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hikf1"]
+texture = ExtResource("4_igts7")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mekvi"]
+texture = ExtResource("5_7gcdl")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jx7sp"]
+texture = ExtResource("7_mkjsn")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_566v2"]
+texture = ExtResource("6_e8duw")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a3n0j"]
+texture = ExtResource("4_2khls")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0rl0q"]
+texture = ExtResource("9_lafnu")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_omsxy"]
+texture = ExtResource("10_44r4b")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_65lbh"]
+texture = ExtResource("12_4bce3")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhwk"]
+texture = ExtResource("11_tif6b")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lqgik"]
+tile_size = Vector2i(40, 40)
+sources/0 = SubResource("TileSetAtlasSource_jyprr")
+sources/1 = SubResource("TileSetAtlasSource_hikf1")
+sources/2 = SubResource("TileSetAtlasSource_mekvi")
+sources/3 = SubResource("TileSetAtlasSource_jx7sp")
+sources/4 = SubResource("TileSetAtlasSource_566v2")
+sources/5 = SubResource("TileSetAtlasSource_a3n0j")
+sources/6 = SubResource("TileSetAtlasSource_0rl0q")
+sources/7 = SubResource("TileSetAtlasSource_omsxy")
+sources/8 = SubResource("TileSetAtlasSource_65lbh")
+sources/9 = SubResource("TileSetAtlasSource_cuhwk")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhsi2"]
+texture = ExtResource("2_mfsda")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jphsd"]
+texture = ExtResource("4_igts7")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1uyw4"]
+texture = ExtResource("5_7gcdl")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nw6k7"]
+texture = ExtResource("7_mkjsn")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f6npd"]
+texture = ExtResource("6_e8duw")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_f7xu7"]
+tile_size = Vector2i(40, 40)
+sources/0 = SubResource("TileSetAtlasSource_lhsi2")
+sources/1 = SubResource("TileSetAtlasSource_jphsd")
+sources/2 = SubResource("TileSetAtlasSource_1uyw4")
+sources/3 = SubResource("TileSetAtlasSource_nw6k7")
+sources/4 = SubResource("TileSetAtlasSource_f6npd")
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource("1_2n2bp")
+
+[node name="BG" type="Sprite2D" parent="."]
+texture = ExtResource("1_cg26s")
+centered = false
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(30, 30)
+tile_set = SubResource("TileSet_lqgik")
+format = 2
+
+[node name="NextTileMap" type="TileMap" parent="."]
+position = Vector2(480, 350)
+tile_set = SubResource("TileSet_f7xu7")
+format = 2
+
+[node name="GUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 437.0
+offset_top = 2.0
+offset_right = 699.0
+offset_bottom = 861.0
+script = ExtResource("5_mmrk7")
+
+[node name="ScoreTitle" type="Label" parent="GUI"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 140.0
+offset_bottom = 83.0
+theme_override_fonts/font = ExtResource("3_c4sw5")
+theme_override_font_sizes/font_size = 40
+text = "Score"
+
+[node name="Score" type="Label" parent="GUI"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 80.0
+offset_right = 210.0
+offset_bottom = 121.0
+theme_override_fonts/font = ExtResource("5_ijal5")
+theme_override_font_sizes/font_size = 30
+text = "0000"
+horizontal_alignment = 2
+
+[node name="SpeedTitle" type="Label" parent="GUI"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 150.0
+offset_right = 140.0
+offset_bottom = 193.0
+theme_override_fonts/font = ExtResource("3_c4sw5")
+theme_override_font_sizes/font_size = 40
+text = "Speed"
+
+[node name="Speed" type="Label" parent="GUI"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 200.0
+offset_right = 210.0
+offset_bottom = 245.0
+theme_override_fonts/font = ExtResource("5_ijal5")
+theme_override_font_sizes/font_size = 30
+text = "0000
+"
+horizontal_alignment = 2
+
+[node name="NextTitle" type="Label" parent="GUI"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 270.0
+offset_right = 70.0
+offset_bottom = 296.0
+theme_override_fonts/font = ExtResource("3_c4sw5")
+theme_override_font_sizes/font_size = 40
+text = "Next"
+
+[node name="Tick" type="Timer" parent="."]
+
+[node name="LateralTimer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="Audio" type="Node2D" parent="."]
+
+[node name="Move" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("16_c7of8")
+
+[node name="Fall1" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("17_wnp2a")
+
+[node name="Fall2" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("18_j752m")
+
+[node name="Fall3" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("19_2nav4")
+
+[node name="Erase1" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("20_lt8ku")
+
+[node name="Erase2" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("21_opo7k")
+
+[node name="Quick1" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("19_5l1ur")
+volume_db = -4.685
+
+[node name="Quick2" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("20_6xj3a")
+volume_db = -4.685
+
+[node name="Quick3" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("21_amptq")
+volume_db = -4.685
+
+[node name="End" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("20_g0hs6")
+
+[node name="Spin1" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("20_ep5gw")
+
+[node name="Spin2" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("21_5hwri")
+
+[node name="GameMode1" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2(437, 2)
+stream = ExtResource("21_5d2kh")
+
+[node name="GameMode2" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2(437, 2)
+stream = ExtResource("22_oqc56")
+
+[node name="Died" type="Label" parent="."]
+offset_left = 97.0
+offset_top = 238.0
+offset_right = 630.0
+offset_bottom = 366.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("14_meck4")
+theme_override_font_sizes/font_size = 100
+text = "SHOU TU"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 213.0
+offset_top = 588.0
+offset_right = 464.0
+offset_bottom = 669.0
+theme_override_colors/font_color = Color(0.992621, 0.931015, 0.957523, 1)
+theme_override_fonts/font = ExtResource("14_meck4")
+theme_override_font_sizes/font_size = 50
+text = "Remake"
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(336, 461)
+scale = Vector2(1.25936, 1.23595)
+texture = ExtResource("31_wkytv")
+
+[node name="4d5197Cfa97a3c98Da1802f7e556d2c1" type="Sprite2D" parent="."]
+position = Vector2(559, 673)
+scale = Vector2(0.546627, 0.404956)
+texture = ExtResource("32_qdih3")
+
+[connection signal="timeout" from="Tick" to="." method="_on_tick_timeout"]
+[connection signal="timeout" from="LateralTimer" to="." method="_on_lateral_timer_timeout"]
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

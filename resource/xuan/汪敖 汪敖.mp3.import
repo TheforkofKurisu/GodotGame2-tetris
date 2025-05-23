@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drgp7kpbujwcs"
+path="res://.godot/imported/汪敖 汪敖.mp3-659f62217c06fec1885c0fd829ae8f64.mp3str"
+
+[deps]
+
+source_file="res://resource/xuan/汪敖 汪敖.mp3"
+dest_files=["res://.godot/imported/汪敖 汪敖.mp3-659f62217c06fec1885c0fd829ae8f64.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
